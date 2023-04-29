@@ -1,0 +1,70 @@
+.homeView{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height:100vh;
+}
+
+.header{
+    width:100%;
+    height:100px;
+}
+
+.header img{
+    height:100%;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.newsContainer{
+    width:60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.newsSlider{
+    display:flex;
+    position:relative;
+}
+
+
+.latestNew{
+    height:60%;
+    margin-bottom: 10px;
+}
+
+.newContent{
+    text-align: left;
+}
+
+.cardContainer{
+    margin-right: 10px;
+}
+
+.sliderButton{
+    position: absolute;
+    top:0;
+    bottom:0;
+    cursor: pointer;
+    transform: translate(0, 40%);
+}
+
+.sliderButton img {
+    
+    height: 25px;
+    width: 25px;
+    color:black;
+}
+
+.sliderButton.Left{
+    left: -40px;
+}
+
+.sliderButton.Right{
+    right: -40px;
+}

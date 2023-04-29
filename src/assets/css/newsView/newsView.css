@@ -1,0 +1,44 @@
+.newsView{
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    align-items:center;
+}
+
+.backButton{
+    width:30px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.backButton img {
+    width:100%;
+    height:100%;
+}
+
+.newsView *+img{
+    height:400px;
+    object-fit: cover;
+    width:60%;
+
+}
+
+
+.newsTitle{
+    margin: 40px;
+    width:60%;
+}
+
+.newsContent{
+    text-align: left;
+    width:60%;
+}
+.newsDateAuthor{
+    margin: 40px;
+    width:60%;
+    display:flex;
+    justify-content: space-between;
+}
+

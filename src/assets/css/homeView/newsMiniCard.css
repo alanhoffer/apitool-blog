@@ -1,0 +1,38 @@
+.newsMiniCard{
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.newsMiniCard:hover {
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.newsMiniCard:hover img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+.newsMiniCard img {
+    height: 130px;  
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    object-fit: cover;  
+    background-size: contain;
+}
+
+.cardTitle{
+    margin:0px 10px;
+    padding:0;
+}
+
+.cardText{
+    font-size: 14px;
+    height: 30px;
+    margin:0px 10px;
+    padding:0;
+}
