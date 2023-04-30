@@ -41,7 +41,6 @@ export function NewsMiniCard(props:any){
         <div className="newsMiniCard">
             <img src={props.image} alt='xd' />
             <h4 className="cardTitle">{shortTitle()}.</h4>
-            <p className="cardText">{shortAuthor()} - {dateToDays()}</p>
         </div>
     )
 }

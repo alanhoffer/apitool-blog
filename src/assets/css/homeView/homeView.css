@@ -21,11 +21,23 @@
     width:60%;
     height: 100%;
     display: flex;
+    text-align:left;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+.newsContainer h2{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.newsContainer h3{
+}
+
+.newTitle{
+}
 
 .newsSlider{
     display:flex;
@@ -43,6 +55,8 @@
 }
 
 .cardContainer{
+    height:120px;
+    width:200px;
     margin-right: 10px;
 }
 

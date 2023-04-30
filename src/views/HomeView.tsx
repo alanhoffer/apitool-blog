@@ -53,10 +53,12 @@ export default function HomeView( ){
             </header>
             { news.length >= 1 ?
             <section className="newsContainer">
+                <h2>News</h2>
                 <div className="latestNew">
                     <h3 className='newTitle'>{news[0].title}</h3>
                     <div className='newContent'>{news[0].content}</div>
                 </div>
+                <h3>More News</h3>
                 <div className="newsSlider">
                     <div className='sliderButton Right' onClick={() => setPage(page => page + 1)}>
                         <img src={NextArrow} />
