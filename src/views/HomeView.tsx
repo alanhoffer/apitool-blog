@@ -8,6 +8,7 @@ import {NewsMiniCard} from '../components/homeView/NewsMiniCard';
 import ScrollContainer from 'react-indiana-drag-scroll'
 import 'react/jsx-runtime'; 
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 interface INews {
     author: string,
@@ -28,14 +29,14 @@ export default function HomeView( ){
 
     async function getNews(){
         try{
-            fetch('https://newsapi.org/v2/everything?q=beekeeping&from=2023-03-29&sortBy=publishedAt&apiKey=36f766169f5c4eaa87a8b8e30f2466c5')
-            .then(res => res.json())
-            .then(response => setNews(response.articles))
+            axios.get('https://newsapi.org/v2/everything?q=beekeeping&from=2023-03-29&sortBy=publishedAt&apiKey=36f766169f5c4eaa87a8b8e30f2466c5')
+            .then((res:any) => setNews(res.data.articles))
         }
         catch(error){
             alert(error)
         }
     }
+    
 
     const filterNews = () => {
         const filteredNews = news.slice(0 + page, 5 + page) ;
