@@ -29,8 +29,8 @@ export default function HomeView( ){
 
     async function getNews(){
         try{
-            axios.get('https://newsapi.org/v2/everything?q=beekeeping&from=2023-03-29&sortBy=publishedAt&apiKey=36f766169f5c4eaa87a8b8e30f2466c5')
-            .then((res:any) => setNews(res.data.articles))
+            axios.get('https://6435d85e537112453fe08ab1.mockapi.io/news')
+            .then((res:any) => setNews(res.data))
         }
         catch(error){
             alert(error)

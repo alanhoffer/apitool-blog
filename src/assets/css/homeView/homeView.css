@@ -36,7 +36,8 @@
 .newsContainer h3{
 }
 
-.newTitle{
+.latestNew{
+    width: 100%;
 }
 
 .newsSlider{
