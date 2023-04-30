@@ -28,7 +28,13 @@ export default function HomeView( ){
 
     async function getNews(){
         try{
-            fetch('https://newsapi.org/v2/everything?q=beekeeping&from=2023-03-29&sortBy=publishedAt&apiKey=36f766169f5c4eaa87a8b8e30f2466c5')
+            fetch('https://newsapi.org/v2/everything?q=beekeeping&from=2023-03-29&sortBy=publishedAt&apiKey=36f766169f5c4eaa87a8b8e30f2466c5', {
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
             .then(res => res.json())
             .then(response => setNews(response.articles))
         }
